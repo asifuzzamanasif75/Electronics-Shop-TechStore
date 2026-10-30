@@ -53,3 +53,58 @@
                     <button type="button" class="buy-button" onclick="buyNow('Asus-Zenbook-14-OLED-UM3405GA-Ryzen-AI-9-465-AMD-Radeon-Graphics-1480%9D-FHD-Touch-Laptop-2255','৳1,55,990')">Buy Now</button>
                 </div>
             </div>
+        </article></div>
+    </section><section class="catalog-section" id="smartphone">
+        <div class="section-heading"><p class="eyebrow">SMARTPHONE</p><h2>Smartphone</h2><p>Explore smartphones built for communication, photography, and everyday performance.</p></div>
+        <div class="product-grid"><article class="product-card">
+            <img src="images/iPhone-18-Pro-Max-1213.webp" alt="iPhone 18 Pro Max">
+            <div class="product-info">
+                <p class="product-type">SMARTPHONE</p>
+                <h3>iPhone 18 Pro Max</h3>
+                <p>A premium smartphone experience with a capable camera and polished performance.</p>
+                <p class="price">৳1,99,999</p>
+                <div class="product-actions">
+                    <button type="button" class="buy-button" onclick="buyNow('iPhone 18 Pro Max','৳1,99,999')">Buy Now</button>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <img src="images/galaxy-s26-ultra-black-6172.webp" alt="Samsung Galaxy S26 Ultra">
+            <div class="product-info">
+                <p class="product-type">SMARTPHONE</p>
+                <h3>Samsung Galaxy S26 Ultra</h3>
+                <p>A premium smartphone experience with a capable camera and polished performance.</p>
+                <p class="price">৳1,16,499</p>
+                <div class="product-actions">
+                    <button type="button" class="buy-button" onclick="buyNow('Samsung Galaxy S26 Ultra','৳1,16,499')">Buy Now</button>
+                </div>
+            </div>
+        </article><article class="product-card">
+            <img src="images/Pixel-10-Obsidian-6540.webp" alt="Google Pixel 10">
+            <div class="product-info">
+                <p class="product-type">SMARTPHONE</p>
+                <h3>Google Pixel 10</h3>
+                <p>A feature-packed smartphone for entertainment, social media, and everyday tasks.</p>
+                <p class="price">৳74,499</p>
+                <div class="product-actions">
+                    <button type="button" class="buy-button" onclick="buyNow('Google Pixel 10','৳74,499')">Buy Now</button>
+                </div>
+            </div>
+        </article></div>
+    </section>
+    <section class="note"><h2>Need help choosing?</h2><p>Contact our team for product information before making your choice.</p><a class="button-link" href="contact.html">Contact TechStore</a></section>
+</main>
+<footer><p>© 2026 TechStore – Electronics Shop</p><p>Created by Md. Asifuzzaman | ID: 2211281</p></footer>
+<dialog id="checkoutDialog" class="checkout-dialog">
+    <form id="checkoutForm" onsubmit="submitOrder(event)">
+        <button type="button" class="dialog-close" onclick="closeCheckout()" aria-label="Close">×</button>
+        <p class="eyebrow">SECURE CHECKOUT</p><h2>Customer Information</h2>
+        <p id="checkoutProduct" class="checkout-product"></p>
+        <label for="customerName">Customer Name</label><input id="customerName" name="customerName" type="text" required placeholder="Enter your full name">
+        <label for="customerPhone">Phone Number</label><input id="customerPhone" name="customerPhone" type="tel" required pattern="[0-9+() -]{7,20}" placeholder="Enter your phone number">
+        <label for="customerEmail">Email Address</label><input id="customerEmail" name="customerEmail" type="email" required placeholder="Enter your email">
+        <button type="submit" class="buy-button">Confirm Purchase</button>
+        <p id="orderResult" class="status-message" aria-live="polite"></p>
+    </form>
+</dialog>
+<script src="script.js"></script>
+</body></html>
