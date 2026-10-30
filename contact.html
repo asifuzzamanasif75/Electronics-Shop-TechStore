@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us | TechStore</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Name: Md. Asifuzzaman | ID: 2211281 -->
+    <header>
+        <div class="logo">Tech<span>Store</span></div>
+        <p class="tagline">Smart technology for everyday life</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a class="active" href="contact.html">Contact Us</a>
+    </nav>
+
+    <main>
+        <section class="page-banner">
+            <p class="eyebrow">WE ARE HERE TO HELP</p>
+            <h1>Get in touch</h1>
+            <p>Have a question about a laptop, smartphone, or accessory? Send us a message.</p>
+        </section>
+
+        <section class="contact-layout">
+            <div class="contact-details">
+                <h2>Contact TechStore</h2>
+                <p>Our team is ready to help you with product details, general questions, and shopping support. Use the form or contact us through the information below.</p>
+                <div class="contact-images">
+                    <img src="images/customer-support.svg" alt="Customer support illustration">
+                    <img src="images/techstore-hero.svg" alt="TechStore electronics collection">
+                </div>
+                <div class="detail-line"><strong>Email:</strong> support@techstore.example</div>
+                <div class="detail-line"><strong>Phone:</strong> +880 1XXX-XXXXXX</div>
+                <div class="detail-line"><strong>Address:</strong> Dhaka, Bangladesh</div>
+                <p class="small-note">The email and phone details above are sample contact information for this academic project.</p>
+            </div>
+
+            <div class="contact-form">
+                <h2>Send us a message</h2>
+                <p>Fill in the fields below and press the button to submit your message.</p>
+                <label for="nameBox">Your Name</label>
+                <input id="nameBox" type="text" placeholder="Enter your name">
+                <label for="emailBox">Email Address</label>
+                <input id="emailBox" type="email" placeholder="Enter your email">
+                <label for="messageBox">Your Message</label>
+                <textarea id="messageBox" rows="5" placeholder="Write your message"></textarea>
+                <button onclick="sendMessage()">Send Message</button>
+                <p id="formResult"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 TechStore – Electronics Shop</p>
+        <p>Created by Md. Asifuzzaman | ID: 2211281</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
